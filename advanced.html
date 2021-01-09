@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Basic Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="images.html">Image Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="this" href="advanced.html"
+              >Advanced Search</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="advanced-search-title">
+      <h1>Advanced Search</h1>
+    </div>
+
+    <div class="search-area">
+      <form action="https://www.google.com/search" method="GET" name="f">
+        <div class="advanced-search">
+          <h2>Find pages with...</h2>
+          <table>
+            <tr>
+              <td class="search-label">
+                <label> all these words:</label>
+              </td>
+              <td>
+                <input name="as_q" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td class="search-label">
+                <label> this exact word or phrase:</label>
+              </td>
+              <td>
+                <input name="as_epq" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td class="search-label">
+                <label> any of these words:</label>
+              </td>
+              <td>
+                <input name="as_oq" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td class="search-label">
+                <label> none of these words:</label>
+              </td>
+              <td>
+                <input name="as_eq" type="text" />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <input name="tbs" type="hidden" />
+        <div id="advanced-search-button">
+          <input class="search-button" value="Advanced Search" type="submit" />
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      Simple Google Clone created by Edward Wolcher for
+      <a href="https://www.theodinproject.com/courses/foundations/lessons/html-css"
+        >The Odin Project</a
+      >
+    </footer>
+  </body>
+</html>

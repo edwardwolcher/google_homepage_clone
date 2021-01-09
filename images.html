@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Basic Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="this" href="images.html">Image Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="advanced.html">Advanced Search</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="search-area">
+      <div class="title-box">
+        <div class="title">Googol</div>
+        <div class="subtitle">Images</div>
+      </div>
+
+      <form action="https://google.com/search">
+        <div class="search-field">
+          <svg class="search-icon">
+            <path
+              d="M8.10313,1.81284 C11.7387,1.81284,14.6858,4.79279,14.6858,8.46875 C14.6858,9.81852,14.2885,11.0744,13.6056,12.1235 C13.3757,12.4766,18.7066,18.4069,18.4163,18.7088 C18.2421,18.89,12.4647,13.4604,12.2713,13.6206 C11.1362,14.5606,9.68479,15.1247,8.10313,15.1247 C4.4676,15.1247,1.52042,12.1447,1.52042,8.46875 C1.52042,4.79279,4.4676,1.81284,8.10313,1.81284 z"
+            ></path>
+          </svg>
+          <input class="search-input" type="text" name="q" />
+          <input name="tbm" value="isch" type="hidden" />
+        </div>
+
+        <div class="search-buttons">
+          <input class="search-button" type="submit" value="Image Search" />
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      Simple Google Clone created by Edward Wolcher for
+      <a
+        href="https://www.theodinproject.com/courses/foundations/lessons/html-css"
+        >The Odin Project</a
+      >
+    </footer>
+  </body>
+</html>
